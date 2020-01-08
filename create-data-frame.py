@@ -11,8 +11,7 @@ spark = SparkSession \
     .getOrCreate()
 
 
-#input_path = '/home/cdsw/access.log.2'
-input_path = './demo4/access.log.2'
+input_path = './access.log.2'
 base_df=spark.read.text(input_path)
 
 split_df = base_df.select(regexp_extract('value', r'([^ ]*)', 1).alias('ip'),
