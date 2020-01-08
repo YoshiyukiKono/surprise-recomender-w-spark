@@ -1,3 +1,13 @@
+# CUSTOM
+*.zip
+
+# CDSW
+R/
+node_modules/
+!.gitignore
+
+# Github Python Template
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
